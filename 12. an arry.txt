@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PHP Arrays</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="text-align:center">PHP Arrays Demonstration</h1>
+
+<!-- Indexed Array -->
+<div class="card">
+
+<h3>1. Indexed Array</h3>
+
+<?php
+
+$tech_stack = array("MySQL", "HTML5", "CSS3", "MongoDB", "JavaScript");
+
+$tech_stack[] = "Bootstrap 5";
+
+echo "<ul>";
+
+foreach($tech_stack as $tech){
+    echo "<li>$tech</li>";
+}
+
+echo "</ul>";
+
+echo "<b>Total Technologies: " . count($tech_stack) . "</b>";
+
+?>
+
+</div>
+
+<!-- Associative Array -->
+<div class="card">
+
+<h3>2. Associative Array</h3>
+
+<?php
+
+$marks = array(
+    "Operating Systems" => 88,
+    "Digital Electronics" => 90,
+    "Internet of Things" => 95,
+    "Web Development" => 86
+);
+
+?>
+
+<table>
+
+<tr>
+<th>Subject Name</th>
+<th>Marks Obtained</th>
+</tr>
+
+<?php
+
+foreach($marks as $subject => $score){
+
+    echo "<tr>";
+    echo "<td>$subject</td>";
+    echo "<td>$score</td>";
+    echo "</tr>";
+}
+
+?>
+
+</table>
+
+</div>
+
+</body>
+</html>

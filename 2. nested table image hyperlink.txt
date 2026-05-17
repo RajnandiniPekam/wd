@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> student details</title>
+</head>
+<body>
+
+<h2>Simple Web Page</h2>
+
+<!-- Image -->
+<img src="https://via.placeholder.com/150" alt="Image">
+
+<br><br>
+
+<!-- Hyperlink -->
+<a href="https://www.google.com">Visit Google</a>
+
+<br><br>
+
+<!-- Main Table -->
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Details</th>
+    </tr>
+
+    <tr>
+        <td>Student</td>
+
+        <td>
+            <!-- Nested Table -->
+            <table border="1">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

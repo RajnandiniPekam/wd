@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>PHP Introduction</title>
+
+<style>
+
+body{
+font-family: Verdana, sans-serif;
+background-color: #d7ccc8;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.server-card{
+background-color: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+text-align: center;
+border-top: 5px solid #7b1fa2;
+}
+
+.time-box{
+background-color: #c8e6c9;
+padding: 15px;
+margin-top: 20px;
+border-radius: 5px;
+font-weight: bold;
+color: #009688;
+border: 1px dashed #a29e1f;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="server-card">
+
+<h1 style="color:#e91e63;">Shraddha More</h1>
+
+<hr>
+
+<?php
+
+date_default_timezone_set("Asia/Kolkata");
+
+$greeting = "Welcome to World of PHP";
+
+echo "<h2>$greeting</h2>";
+
+$current_date = date("d-m-Y");
+$current_time = date("h:i:s A");
+
+echo "<div class='time-box'>";
+echo "Server Date: ".$current_date."<br>";
+echo "Server Time: ".$current_time;
+echo "</div>";
+
+?>
+
+<p>
+<small>
+<i>This page was generated using PHP</i>
+</small>
+</p>
+
+</div>
+
+</body>
+</html>

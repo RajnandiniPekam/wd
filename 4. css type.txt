@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Type Demo</title>
+
+<style>
+body{
+    background-color: aliceblue;
+    font-family: Verdana, sans-serif;
+}
+
+.mytable{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    background-color: pink;
+}
+
+.mytable th{
+    background-color: green;
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+
+.mytable td{
+    border: 1px solid pink;
+    padding: 8px;
+}
+
+.mytable tr:hover{
+    background-color: skyblue;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 style="color: navy; text-align: center;">
+CSS Implementation Demo
+</h1>
+
+<h3>Employee Data Table</h3>
+
+<table class="mytable">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Sayali</td>
+<td>HR</td>
+<td style="color:green;"><b>Active</b></td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Swara</td>
+<td>IT</td>
+<td style="color:green;"><b>Active</b></td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Sugat</td>
+<td>Finance</td>
+<td style="color:red;"><b>Inactive</b></td>
+</tr>
+
+</table>
+
+</body>
+</html>

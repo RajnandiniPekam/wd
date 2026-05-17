@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practical Example</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+        }
+        button{
+            padding: 10px 15px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        #box{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(210, 250, 212);
+            margin: 20px auto;
+            line-height: 100px;
+        }
+        img{
+            width: 200px;
+            height: 150px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body bgcolor="lightblue">
+
+    <h2 style="color: blue;">Javascript DOM Demonstration</h2>
+
+    <p id="message">Welcome Students! Click the buttons to see DOM changes.</p>
+
+    <div id="box">DOM Box</div>
+
+    <!-- Image -->
+    <img id="myImage" src="Cat.jpeg" alt="DOM Image">
+
+    <br>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="addItem()">Add New Message</button>
+    <button onclick="toggleBox()">Show / Hide</button>
+    <button onclick="changeImage()">Change Image</button>
+
+    <ul id="list"></ul>
+
+<script>
+    function changeText(){
+        document.getElementById("message").innerHTML = "Text changed";
+    }
+
+    function changeColor(){
+        document.getElementById("box").style.backgroundColor = "green";
+    }
+
+    function addItem(){
+        var newItem = document.createElement("li");
+        newItem.innerHTML = "Welcome to Development Era!";
+        document.getElementById("list").appendChild(newItem);
+    }
+
+    function toggleBox(){
+        var box = document.getElementById("box");
+        if(box.style.display === "none"){
+            box.style.display = "block";
+        }else{
+            box.style.display = "none";
+        }
+    }
+
+    function changeImage(){
+        document.getElementById("myImage").src = "Cat3.jpg";
+    }
+</script>
+
+</body>
+</html>

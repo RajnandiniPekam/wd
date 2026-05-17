@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<style>
+body{
+text-align:center;
+background:magenta;
+}
+</style>
+</head>
+
+<body>
+
+<h2 style="color:white;">Simple Calculator</h2>
+
+enter 1st no:
+<input type="number" id="num1" placeholder="enter no"><br><br>
+
+enter 2nd no:
+<input type="number" id="num2" placeholder="enter Number"><br><br>
+
+select operation:
+<select id="op">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+<option value="%">%</option>
+</select>
+
+<br><br>
+
+<button onclick="calc()">Calculate</button>
+
+<h3 id="ans"></h3>
+
+<script>
+
+function calc(){
+
+let num1 =parseFloat(document.getElementById("num1").value);
+let num2=parseFloat(document.getElementById("num2").value);
+let op=document.getElementById("op").value;
+let r;
+
+switch(op){
+
+case "+": r=num1+num2; break;
+case "-": num1-num2; break;
+case "*": r=num1*num2; break;
+case "/": r=num1/num2; break;
+case "%": r=num1%num2; break;
+
+default: r="Invalid";
+}
+
+document.getElementById("ans").innerHTML="Result = "+r;
+}
+
+</script>
+
+</body>
+</html>

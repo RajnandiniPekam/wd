@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+</head>
+<body style="font-family:arial,scan-serif;">
+
+<h2 align="center">Registration Form</h2>
+
+<form>
+    Name:
+    <input type="text"><br><br>
+
+    Email:
+    <input type="email"><br><br>
+
+    Gender:
+    <input type="radio" name="g"> Male
+    <input type="radio" name="g"> Female<br><br>
+
+    Date of Birth:
+    <input type="date"><br><br>
+
+    <input type="submit" value="Submit" style="background-color:green; color:white; cursor:pointer;">
+</form>
+
+</body>
+</html>
