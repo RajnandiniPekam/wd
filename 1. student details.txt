@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <center><h1>Student details</h1></center>
+    <hr>
+    <div>
+        <h2>Student Personal Details</h2>
+        <p><b>Name: </b> Sayali dharashive</p>
+        <p><b>Date of Birth: </b> 18-12-2004</p>
+        <p><b>Email: </b> sd@gmail.com</p>
+    </div>
+    <hr>
+    <div>
+        <h3>Educational Details</h3>
+        <p><b>Course: </b>Computer Science</p>
+        <p><b>College: </b>Sinhgad Academy of Engineering</p>
+        <p><b>Year: </b>SE</p>
+        <p><b>Percentage: </b>100%</p>
+    </div>
+    <hr>
+</body>
+</html>
